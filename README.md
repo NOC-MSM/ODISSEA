@@ -1,2 +1,2 @@
 # ODISSEA
-Resources for the ODISSEA project
+Resource repo for the ODISSEA project
