@@ -330,6 +330,7 @@
 /
 
 &namtrd
+   ln_dyn_trd  = .true.   ! (T) 3D momentum trend output
    ln_tra_trd  = .true.   ! (T) 3D tracer trend output
 /
 
@@ -337,8 +338,4 @@
     sn_cfctl%l_runstat = .true.,
     ln_timing = .true.,
     ln_diacfl = .true.,
-/
-
-&namtrd
-    ln_tra_trd = .true.,
 /

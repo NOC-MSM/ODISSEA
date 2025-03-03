@@ -47,6 +47,7 @@ cp -r EXPREF EXP_MYRUN
 
 #Create a symbolic link for INPUT
 ln -s $WD/INPUT_archer2 EXP_MYRUN/INPUT
+ln -s $WD/INPUT_archer2/bfr_coef.nc EXP_MYRUN/bfr_coef.nc
 
 #Copy the slurm run script to the configuration directory
 cp $WD/scripts/run_script/run_nemo5504_48X.slurm EXP_MYRUN/
