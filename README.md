@@ -1,4 +1,6 @@
 # ODISSEA - NAARC_NPD Configruation
+![image](https://github.com/user-attachments/assets/061f4faa-0ca6-4445-82f9-f669ca91bead)
+
 Resource repo for the ODISSEA project
 
 Configuration Overview
