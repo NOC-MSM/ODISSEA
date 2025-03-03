@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Malik"
+  given-names: "Afroosa"
+- family-names: "Wise"
+  given-names: "Anthony"
+- family-names: "Harle"
+  given-names: "James"
+- family-names: "Blaker"
+  given-names: "Adam"
+- family-names: "Tooth"
+  given-names: "Oliver"
+  
+title: "ODISSEA North Atlantic Arctic (NAARC-NPD) configuration for NEMO v4.2.2"
+version: 0.1.0
+doi: 10.5281/zenodo.14961864
+date-released: 2025-03-03
+url: "https://github.com/NOC-MSM/ODISSEA"
