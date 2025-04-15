@@ -1,7 +1,7 @@
 &nampar
    nlay_i           =   4             !  number of ice  layers
    nlay_s           =   1             !  number of snow layers
-	cn_icerst_in = 'dummy',
+	cn_icerst_in = 'eORCA12_00140160_restart_ice',
    cn_icerst_out    = "restart_ice"   !  suffix of ice restart name (output)
    cn_icerst_indir  = "./RESTARTS"
    cn_icerst_outdir = "./RESTARTS"    !  directory to write output ice restarts
@@ -54,6 +54,13 @@
 
 &namini         !   Ice initialization
    ln_iceini        = .true.          !  netcdf file provided for initialization (T) or not (F)
-   nn_iceini_file   = 0               !  netcdf file provided for initialization (T) or not (F)
-   cn_dir='./'
+   nn_iceini_file   = 1   !0               !  netcdf file provided for initialization (T) or not (F)
+   cn_dir='./INPUT/'
+   ! -- for nn_iceini_file = 1
+   sn_hti = 'Ice_initialization'    , -1. ,'sithic'   ,  .false.  , .true., 'monthly'  , '' , '', ''
+   sn_hts = 'Ice_initialization'    , -1. ,'snthic'   ,  .false.  , .true., 'monthly'  , '' , '', ''
+   sn_ati = 'Ice_initialization'    , -1. ,'siconc'   ,  .false.  , .true., 'monthly'  , '' , '', ''
+   sn_smi = 'NOT USED'    , -12. ,'smi'   ,  .false.  , .true., 'yearly'  , '' , '', ''
+   sn_tmi = 'NOT USED'    , -12. ,'tmi'   ,  .false.  , .true., 'yearly'  , '' , '', ''
+   sn_tsu = 'NOT USED'    , -12. ,'tsu'   ,  .false.  , .true., 'yearly'  , '' , '', ''
 /

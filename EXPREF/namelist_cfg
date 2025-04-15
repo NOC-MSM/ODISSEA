@@ -13,14 +13,14 @@
     cn_ocerst_indir = './RESTARTS',
     cn_ocerst_outdir = './RESTARTS',
     nn_stock = 576,
-    ln_mskland = .true.,
+    ln_mskland = .false.,
   	ln_rst_list = .false.,
 
     nn_stocklist = 0,0,0,0,0,0,0,0,0,0
 /
 
 &namdom
-    rn_Dt = 450.0,
+    rn_Dt = 450,
     rn_atfp = 0.05,
     ln_meshmask = .false.,
 /
@@ -36,12 +36,15 @@
 /
 
 &namtsd
+
+
     cn_dir = './INPUT/',
-        ln_tsd_init = .true.,
+    ln_tsd_init = .true.,
     sn_tem = 'initcd', -1, 'toce', .false., .true., 'monthly',
               '', '', '',
     sn_sal = 'initcd', -1, 'so', .false., .true., 'monthly',
               '', '', '',
+
 !    sn_tem = 'g8p7ho_tsd_init_filled', 24.0, 'tn', .false., .false., 'daily',
 !             '', '', '',
 !    sn_sal = 'g8p7ho_tsd_init_filled', 24.0, 'sn', .false., .false., 'daily',
@@ -334,7 +337,6 @@
 /
 
 &namtrd
-   ln_dyn_trd  = .true.   ! (T) 3D momentum trend output
    ln_tra_trd  = .true.   ! (T) 3D tracer trend output
 /
 
@@ -342,4 +344,8 @@
     sn_cfctl%l_runstat = .true.,
     ln_timing = .true.,
     ln_diacfl = .true.,
+/
+
+&namtrd
+    ln_tra_trd = .true.,
 /
