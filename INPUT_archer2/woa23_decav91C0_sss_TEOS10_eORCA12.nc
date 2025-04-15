@@ -1,0 +1,1 @@
+/work/n01/n01/afroosa/NEMO_repositories/configs/NAARC_NPD/INPUT_archer2/woa23_decav91C0_sss_TEOS10_eORCA12.nc

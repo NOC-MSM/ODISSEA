@@ -1,0 +1,1 @@
+/work/n01/n01/afroosa/NEMO_repositories/configs/NAARC_NPD/INPUT_archer2/woa23_decav71A0_TS_TEOS10_eORCA12_gauss_smoothed.nc
